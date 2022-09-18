@@ -88,18 +88,18 @@ body:before {
   transition-timing-function: cubic-bezier(.38,4.27,.25,1);
 }
 
+.hour-hand {
+  height: 9px;
+  box-shadow: 0 0 1rem #ffe600;
+}
+
 .min-hand {
-  height: 4px;
+  height: 5px;
   box-shadow: 0 0 1rem var(--bg-color-blue);
 }
 
 .second-hand {
   background: #ff0000;
   box-shadow: 0 0 1rem #f30;
-  height: 1px;
-}
-  
-.hour-hand {
-  height: 6px;
-  box-shadow: 0 0 1rem #ffe600;
+  height: 2px;
 }
