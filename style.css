@@ -46,6 +46,16 @@ body:before {
 .digital-clock {
   position: relative;
   margin: 2vmax 0 0;
-  font: 4vmax Quantico, sans-serif;
-  color: red;
+  font: 5vmax Quantico, sans-serif;
+  color: #ffcc00;
+  animation: rainbow-effect 3s ease-in-out infinite;
+}
+
+@keyframes rainbow-effect {
+    10% {color: #ffcc00; }
+    25% {color: #43db2f; }
+    40% {color: #0DC8F5; }
+    60% {color: #f32105; }
+    80% {color: #a34b9d; }
+    100% {color: #DC2076;}
 }
