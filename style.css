@@ -10,6 +10,15 @@ html {
   height: 100vh;
 }
 
+/* Variables */
+
+:root {
+  --bg-color-yellow: #ffcc00;
+  --bg-color-blue: #0077ff;
+}
+
+/* Body */
+
 body {
   display: flex;
   justify-content: center;
@@ -25,12 +34,14 @@ body:before {
   position: absolute;
 }  
 
+/* Analog clock */
+
 #clock {
   position: relative;
-  margin: 4vmax auto;
+  margin: 1.5em auto;
   padding: 2rem;
-  width: 24rem;
-  height: 24rem;
+  width: 22vmax;
+  height: 22vmax;
   border: .6vmin solid #fff;
   border-radius: 50%;
   box-shadow: 0 0 1rem 1rem #0077ff;
@@ -43,11 +54,13 @@ body:before {
   transform: translateY(-3px); /* account for the height of the clock hands */
 }
 
+/* Digital clock */
+
 .digital-clock {
   position: relative;
-  margin: 2vmax 0 0;
+  margin: .4em 0 0;
   font: 5vmax Quantico, sans-serif;
-  color: #ffcc00;
+  color: var(--bg-color-yellow);
   animation: rainbow-effect 3s ease-in-out infinite;
 }
 
@@ -58,4 +71,35 @@ body:before {
     60% {color: #f32105; }
     80% {color: #a34b9d; }
     100% {color: #DC2076;}
+}
+
+/* Clock-hands */
+
+.hand {
+  width: 50%;
+  border-radius: 15px;
+  height: 6px;
+  background: #fff;
+  position: absolute;
+  top: 50%; 
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all .05s ease-in-out;
+  transition-timing-function: cubic-bezier(.38,4.27,.25,1);
+}
+
+.min-hand {
+  height: 4px;
+  box-shadow: 0 0 1rem var(--bg-color-blue);
+}
+
+.second-hand {
+  background: #ff0000;
+  box-shadow: 0 0 1rem #f30;
+  height: 1px;
+}
+  
+.hour-hand {
+  height: 6px;
+  box-shadow: 0 0 1rem #ffe600;
 }
