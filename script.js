@@ -29,7 +29,7 @@ const nameDivs = () => {
 }
 nameDivs();
 
-// function to get the current date and time for the analog clock
+// function to get the current date and time
 
 const secondHand = document.getElementsByClassName('hand')[2];
 const minHand = document.getElementsByClassName('hand')[1];
@@ -47,9 +47,8 @@ function setDate() {
   minHand.style.transform = `rotate(${minsDegrees}deg)`;
 
   const hours = now.getHours();
-  const hoursDegrees = ((hours / 12) * 360) + ((mins / 60)*30) + 90;
+  const hoursDegrees = ((hours / 12) * 360) + ((minutes / 60)*30) + 90;
   hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
-
 }
 
 setInterval(setDate, 1000);
