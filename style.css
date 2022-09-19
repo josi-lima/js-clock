@@ -54,7 +54,7 @@ body:before {
 }
 
 @media (max-width: 60rem){  /* mobile format */
-    .digital-clock { margin: 5em 0 0; }   
+    .digital-clock { margin: 4em 0 0; }   
 }
 
 /* Analog clock */
