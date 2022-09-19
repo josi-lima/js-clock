@@ -51,6 +51,15 @@ function setClockDate() {
   const hours = now.getHours();
   const hoursDegrees = ((hours / 12) * 360) + ((minutes / 60) * 30) + 90;
   hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
+
+  // Conditional to accurate seconds at the analog clock
+
+  if (seconds === 0) {
+    secondHand.classList.add('fast');
+  } 
+  if (seconds === 1) {
+    secondHand.classList.remove('fast');
+  }
 }
 
 setInterval(setClockDate, 1000);
@@ -79,3 +88,4 @@ function setDigitalTime() {
 setInterval(setDigitalTime, 1000);
 
 setDigitalTime();
+
