@@ -38,7 +38,7 @@ body:before {
 
 .digital-clock {
   position: relative;
-  margin: 35px 0 0;
+  margin: .5em 0 0;
   font: 5vmax Quantico, sans-serif;
   color: var(--bg-color-yellow);
   animation: rainbow-effect 3s ease-in-out infinite;
@@ -51,6 +51,10 @@ body:before {
     60% {color: #f32105; }
     80% {color: #a34b9d; }
     100% {color: #DC2076;}
+}
+
+@media (max-width: 60rem){  /* mobile format */
+    .digital-clock { margin: 5em 0 0; }   
 }
 
 /* Analog clock */
