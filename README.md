@@ -1,6 +1,6 @@
 # Digital and Analog Clock ⏰
 
-⚡ <strong>[ JavaScript / CSS / HTML ]</strong> ---
+⚡ <strong>[ JavaScript / CSS / HTML ]</strong> --- https://josi-lima.github.io/js-clock/
 
 <br>
 
