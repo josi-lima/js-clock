@@ -38,7 +38,7 @@ body:before {
 
 .digital-clock {
   position: relative;
-  margin: 3px 0 0;
+  margin: 40px 0 0;
   font: 5vmax Quantico, sans-serif;
   color: var(--bg-color-yellow);
   animation: rainbow-effect 3s ease-in-out infinite;
