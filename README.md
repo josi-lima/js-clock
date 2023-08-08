@@ -8,9 +8,15 @@
 
 <strong>[EN]</strong>
 <br>
-Page displaying a clock (analog and digital mode). This is the project #2 of a series based on the coding challenge _[#JavaScript30](https://javascript30.com/)_.
+Page displaying a clock (analog and digital mode). Each time the page is reloaded, it is displayed a new background image.
+This is the project #2 of a series based on the coding challenge _[#JavaScript30](https://javascript30.com/)_.
 
 <strong>[POR]</strong>
 <br>
-Página exibindo um relógio (modo analógico e digital). Este é o projeto #2 de uma série baseada no desafio de programação _[#JavaScript30](https://javascript30.com/)_.
+Página exibindo um relógio (modo analógico e digital). A cada vez que a página é recarregada, é exibida uma nova imagem de fundo.
+Este é o projeto #2 de uma série baseada no desafio de programação _[#JavaScript30](https://javascript30.com/)_.
+
+<br>
+
+![Captura de tela 2023-08-08 171006](https://github.com/josi-lima/js-clock/assets/108018406/551c3fc6-dad6-4b7b-83de-22020166cfdc)
 
